@@ -39,7 +39,6 @@ while(my $ln = <IN>)
      	 	my $gaps = () = $ln =~ /\./g;
       		my $nuc = $len-$gaps;
 
-      		# print OUT ">$head|$head|Macaca mulatta|F|J-REGION|0..0|$nuc nt|1| | | | |$nuc+$gaps=$len| | | |\n$ln\n";		
       		print OUT ">$head|$head|Macaca mulatta|F|D-REGION|0..0|$nuc nt|1| | | | |$nuc+$gaps=$len| | | |\n$ln\n";
 	}
 }
