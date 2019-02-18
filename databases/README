@@ -1,0 +1,15 @@
+In order to obtain gapped V sequences that are required for the immcantation pipeline, the following procedure was followed:
+
+- The nucleotide sequences of V genes obtained by PacBio sequencing of a rhesus macaque genome was translated using the transeq tool in the EMBOSS 6.6.0.0 software suite [1]. 
+- The protein sequences were submitted to the IMGT DomainGapAlign tool [2, 3]  to obtain gapped V sequences for Macaca mulatta. Some of the sequences were manually edited.    
+- Corresponding gaps were introduced in the nucleotide sequences and the positions for framework (FR) and complementarity-determining regions (CDR) regions determined. 
+- The headers were modified to resemble the IMGT headers.These sequences required by MakeDb.py are present in: slow_delivery_immunization/databases/fasta_immcantation/
+- The positions for the FR and CDR3 are included in the slow_delivery_immunization/databases/igblast_files/internal_data/rhesus_monkey.ndm.imgt & slow_delivery_immunization/databases/igblast_files/internal_data/rhesus_monkey.pdm.imgt
+- The database sequences for igblast are in: slow_delivery_immunization/databases/igblast_files/internal_data/
+- The optional file for igblast: slow_delivery_immunization/databases/igblast_files/optional_file/rhesus_monkey_gl.aux
+
+
+References:
+1. Rice P, Longden I, Bleasby A: EMBOSS: the European molecular biology open software suite. Trends in genetics 2000, 16:276-277.
+2. Ehrenmann F, Lefranc MP: IMGT/DomainGapAlign: IMGT standardized analysis of amino acid sequences of variable, constant, and groove domains (IG, TR, MH, IgSF, MhSF). Cold Spring Harb Protoc 2011, 2011:737-749.
+3. Ehrenmann F, Kaas Q, Lefranc MP: IMGT/3Dstructure-DB and IMGT/DomainGapAlign: a database and a tool for immunoglobulins or antibodies, T cell receptors, MHC, IgSF and MhcSF. Nucleic Acids Res 2010, 38:D301-307.
